@@ -1,0 +1,34 @@
+.user-form {
+    width: 100%;
+}
+
+.user-form input,
+.user-form select,
+.user-form button {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.user-form input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.user-form input:focus {
+    border-bottom: 1px solid #4285f4;
+}
+
+.user-form button {
+    background: #4285f4;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
