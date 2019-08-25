@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title><%= documentTitle %></title>
 </head>
 
 <body>
     <div class="container">
-        <ul class="users-list">
-            <li>User 1</li>
-        </ul>
+        <% if(users.length > 0) { %>
+            <ul class="users-list">
+                <% for(let user of users) {%>
+                        <li class="users-list__item">
+                            <p>
+                                <strong><%= user.firstname + " " + user.lastname %></strong>
+                            </p>
+                            <small><%= user.sex %></small>
+                        </li>
+                <%}%>
+            </ul>
+        <%} else {%>
+            <h1>No users found!</h1>
+        <%}%>
+
     </div>
 </body>
 
