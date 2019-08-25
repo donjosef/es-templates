@@ -5,6 +5,9 @@ const usersRoutes = require('./routes/users');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 app.use(homeRoutes);
 app.use(usersRoutes);
 
