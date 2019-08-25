@@ -1,7 +1,7 @@
 # Mini Express.js app with ejs as template engine
 
 ## Description
-A mini express application that allows to see a list of users after submit one. 
+A mini express application that allows to see a list of users after submit one.
 
 ## Main fulfilled tasks
 1. Handles routing with express.js
@@ -13,3 +13,7 @@ A mini express application that allows to see a list of users after submit one.
 * Express.js
 * ejs template engine
 * body-parser
+
+## How to run
+1. npm install from your terminal
+2. npm start to run the local nodemon server
