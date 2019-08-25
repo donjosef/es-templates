@@ -5,7 +5,10 @@ const router = express.Router();
 const users = [];
 
 router.get('/users', (req, res, next) => {
-    res.render('users');
+    res.render('users', {
+        documentTitle: 'Users',
+        users
+    });
 });
 
 router.post('/users', (req, res, next) => {
