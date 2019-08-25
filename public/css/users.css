@@ -7,4 +7,5 @@
 .users-list__item {
     border-bottom: 1px solid #f1f1f1;
     padding: 10px;
+    text-transform: capitalize;
 }
